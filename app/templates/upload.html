@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  {% include "header.html" %}
+  <body>
+    {% include "banner.html" %}
+    <div class="container">
+
+     <div id="top">
+       <span style="text-align:center;">
+         <h1>"Create Hashtag" (Most Common Words Finder)</h1>
+       </span>
+
+       <hr>
+      </div>
+
+     <div class="collapsable-rows">
+       <div class="expands" style="float:left;">
+         <a href="#"><h2>Upload Corpus</h2></a>
+      </div>
+      <div class="collapsable collapsable-content">
+      </div>
+      <form id="uploadbanner" enctype="multipart/form-data" method="post" action=uploadfiles>
+         <input id="fileupload" name="file" type="file" class="file"/>
+      </form>
+      <div id="view-results-btn" style="text-align:center;">
+      <span style="float:left;">Documents Uploaded to Corpus:{% for f in files %} {{ f }}, {% endfor %}</span><br />
+      <a href="results" class="btn btn-primary">See Results</a> 
+      <a href="reset" class="btn btn-primary" title="delete current uploaded corpus">Reset</a>
+      </div>
+      <hr>
+
+      <h2> Or View Demo: </h2>
+      <div id="top" style="text-align:center;">
+      <a href="demo" class="btn btn-primary btn-lg">View Demo</a>
+      </div>
+    </div>
+
+    <script>
+      $('.expands').click(function(){
+      var w = jQuery(this).attr("id");
+      $('#'+w+'-content').slideToggle('slow');
+      });
+    </script>
+  </body>
+</html>

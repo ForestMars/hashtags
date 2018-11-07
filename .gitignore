@@ -1,0 +1,5 @@
+__pycache__
+.DS_Store
+corpus/.__init__.py
+pickle/.__init__.py
+requirements.ubu
