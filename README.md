@@ -1,7 +1,7 @@
 
 
-# Create Hashtags exercise for Eigen Technologies ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
-A quick demo in Python 3 to find the most common word occurrences in a corpus of documents.
+# Quick topic modeling exercise ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
+A quick demo in Python 3 to find and display word occurrences in a corpus of documents.
 
 ## Author
 Forest Mars
