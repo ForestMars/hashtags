@@ -1,5 +1,5 @@
 #setuptools==39.0.1
-nltk==3.3
+nltk==3.4.5
 #scikitlearn==0.1.1
 stop_words==2018.7.23
 Werkzeug==0.14.1
